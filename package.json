@@ -1,0 +1,17 @@
+{
+  "name": "@khaib10/tsunami",
+  "version": "1.0.0",
+  "description": "Surge an AI endpoint: check overflow safety (does an oversized prompt error, or silently truncate?) and load it under concurrency with latency percentiles and a capacity knee.",
+  "type": "module",
+  "bin": { "tsunami": "bin/tsunami.js" },
+  "main": "src/surge.js",
+  "exports": { ".": "./src/surge.js" },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "engines": { "node": ">=18.17" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "keywords": ["llm", "agents", "load-testing", "resilience", "context-window", "ollama", "concurrency"],
+  "publishConfig": { "access": "public" },
+  "repository": { "type": "git", "url": "git+https://github.com/KhaiB10/tsunami.git" },
+  "author": "Khai Bustos",
+  "license": "MIT"
+}
